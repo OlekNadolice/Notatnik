@@ -1,0 +1,32 @@
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  datasource:
+    url: jdbc:postgresql://postgresql-ediary.alwaysdata.net:5432/ediary_db2
+    username: ediary
+    password: studia2023
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create-drop
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+hibernate:
+  highlight_sql: true
+
+
+url:
+  applicationAdress: http://www.wnotes.alwaysdata.net/
+
+
+
+
